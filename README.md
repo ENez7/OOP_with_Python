@@ -1,6 +1,7 @@
 # OOP with Python
 - Python scripts based on [Platzi](https://platzi.com/c/enez/ "Platzi") [course](https://platzi.com/clases/poo-python/ "course") 💚
 - Use Python 3
+- Working on this, not all scripts uploaded
 
 # Windows installation guide
 1. [Download](https://www.python.org/downloads/ "Download") Python 3 for Windows
