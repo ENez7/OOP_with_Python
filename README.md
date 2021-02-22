@@ -3,7 +3,7 @@
 - Use Python 3
 - Working on this, not all scripts uploaded
 
-# Windows installation guide
+## Windows installation guide
 1. [Download](https://www.python.org/downloads/ "Download") Python 3 for Windows
 2. Run executable installer
 3. Verify Python was installed
@@ -17,3 +17,16 @@
 
 > To run python scripts, open CMD, move onto your script's directory and enter: 
 >  python scriptName.py  // VSCode recommended to avoid this step
+
+## Setting a virtual environment - Windows
+    mkdir directoryName
+    cd directoryName
+    python -m venv env  // env is the name of the virtual environment
+    env\Scripts\activate.bat
+    pip install bokeh
+## Setting a virtual environment - Linux system
+    mkdir directoryName
+    cd directoryName
+    python[version] -m venv env
+    source env/bin/activate
+    pip install bokeh
