@@ -9,7 +9,7 @@ if __name__ == '__main__':
     y_vals = []
     
     for x in x_vals:
-        val = int(input(f'Y-Value for {x} '))
+        val = int(input(f'Y-Value for {x}: '))
         y_vals.append(val)
         
     fig.line(x_vals, y_vals, line_width = 2)
