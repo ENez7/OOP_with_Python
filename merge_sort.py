@@ -11,30 +11,30 @@ def merge_sort(data):
         merge_sort(rigth_side)
         
         # Iterators for sub-lists
-        i = 0
-        j = 0
+        left_side_iterator = 0
+        right_side_iterator = 0
         # Iterator for main list
-        k = 0
+        main_list_iterator = 0
         
-        while i < len(left_side) and j < len(rigth_side):
-            if left_side[i] < rigth_side[j]:
-                data[k] = left_side[i]
-                i += 1
+        while left_side_iterator < len(left_side) and right_side_iterator < len(rigth_side):
+            if left_side[left_side_iterator] < rigth_side[right_side_iterator]:
+                data[main_list_iterator] = left_side[left_side_iterator]
+                left_side_iterator += 1
             else:
-                data[k] = rigth_side[j]
-                j += 1
-            k += 1
+                data[main_list_iterator] = rigth_side[right_side_iterator]
+                right_side_iterator += 1
+            main_list_iterator += 1
         
         # These while's below are for the remaining data in the sub-arrays
-        while i < len(left_side):
-            data[k] = left_side[i]
-            i += 1
-            k += 1
+        while left_side_iterator < len(left_side):
+            data[main_list_iterator] = left_side[left_side_iterator]
+            left_side_iterator += 1
+            main_list_iterator += 1
         
-        while j < len(rigth_side):
-            data[k] = rigth_side[j]
-            j += 1
-            k += 1
+        while right_side_iterator < len(rigth_side):
+            data[main_list_iterator] = rigth_side[right_side_iterator]
+            right_side_iterator += 1
+            main_list_iterator += 1
     
     return data
         
