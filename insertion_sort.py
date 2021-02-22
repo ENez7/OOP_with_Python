@@ -13,7 +13,7 @@ def insertion_sort(data_list):
 
 if __name__ == '__main__':
     data = [2, 3 , 5, 7, 2 ,7, 9, 1, 0, -1]
-    # Change this value or random generate them to prove another cases
+    # Change this value or random generate them to test another cases
     
     data = insertion_sort(data)
     print(data)
